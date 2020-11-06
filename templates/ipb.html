@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <script>
+    </script>
+{% endblock %}
+{% block body %}
+<div id="jio">
+    <form action="/block" class="block" method="post">
+        <div class="container">
+            <label for="ipblock_name"><b>Name The IP</b></label><br>
+            <input type="text" placeholder="Name The IP" name="ipblock_name" required><br>
+
+            <label for="ipblock"><b>IP Address</b></label><br>
+            <input type="text" placeholder="IP Address" name="ipblock" required><br>
+
+            <button type="submit">BLOCK</button><br>
+        </div>
+    </form>
+</div>
+{% endblock %}
